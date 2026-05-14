@@ -437,36 +437,39 @@ a:hover {
 
 .reveal {
   opacity: 0;
-  transform: translateY(12px);
-  animation: fadeUp 0.65s ease forwards;
+  transform: translateY(20px);
 }
 
-.reveal:nth-of-type(2) {
-  animation-delay: 0.08s;
+.reveal.scroll-revealed {
+  animation: fadeUp 0.72s ease-out forwards;
 }
 
-.reveal:nth-of-type(3) {
-  animation-delay: 0.14s;
+.reveal:nth-of-type(2).scroll-revealed {
+  animation-delay: 0.06s;
 }
 
-.reveal:nth-of-type(4) {
-  animation-delay: 0.2s;
+.reveal:nth-of-type(3).scroll-revealed {
+  animation-delay: 0.12s;
 }
 
-.reveal:nth-of-type(5) {
-  animation-delay: 0.26s;
+.reveal:nth-of-type(4).scroll-revealed {
+  animation-delay: 0.18s;
 }
 
-.reveal:nth-of-type(6) {
-  animation-delay: 0.32s;
+.reveal:nth-of-type(5).scroll-revealed {
+  animation-delay: 0.24s;
 }
 
-.reveal:nth-of-type(7) {
-  animation-delay: 0.38s;
+.reveal:nth-of-type(6).scroll-revealed {
+  animation-delay: 0.30s;
 }
 
-.reveal:nth-of-type(8) {
-  animation-delay: 0.44s;
+.reveal:nth-of-type(7).scroll-revealed {
+  animation-delay: 0.36s;
+}
+
+.reveal:nth-of-type(8).scroll-revealed {
+  animation-delay: 0.42s;
 }
 
 @keyframes fadeUp {

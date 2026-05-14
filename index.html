@@ -320,5 +320,26 @@ If you aren't a tech geek, you might be wondering: What does an SRE actually do?
     <footer class="footer">
       <p>Prepared by Mehar Sandhu | Winter 2026 Work Term Report</p>
     </footer>
+
+    <script>
+      const revealElements = document.querySelectorAll('.reveal');
+      
+      const observerOptions = {
+        threshold: 0.15,
+        rootMargin: '0px 0px -100px 0px'
+      };
+      
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('scroll-revealed');
+          } else {
+            entry.target.classList.remove('scroll-revealed');
+          }
+        });
+      }, observerOptions);
+      
+      revealElements.forEach(el => observer.observe(el));
+    </script>
   </body>
 </html>
